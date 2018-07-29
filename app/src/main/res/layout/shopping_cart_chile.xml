@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/chile_checkbox"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/shopping_cart_chile_imageview"
+        android:layout_toRightOf="@+id/chile_checkbox"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chile_title"
+        android:layout_toRightOf="@+id/shopping_cart_chile_imageview"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:id="@+id/chile_price"
+        android:layout_toRightOf="@+id/shopping_cart_chile_imageview"
+        android:layout_below="@+id/chile_title"
+        />
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/chile_title"
+        android:layout_marginRight="50dp"
+        >
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/shopping_jia"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shopping_price_text"
+            android:text="23132123"
+            />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/shopping_jian"
+            android:text="-"
+            />
+    </LinearLayout>
+</RelativeLayout>
